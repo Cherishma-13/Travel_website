@@ -1,0 +1,47 @@
+.navbar{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(77, 75, 75);
+    opacity: 0.6;
+}
+#home h1{
+    font-size: 37px;
+}
+#home h2{
+    font-size: 23px;
+}
+#home h3{
+    font-size: 13px;
+}
+input[type=search]{
+    width: 250px;
+    height: 23px;
+}
+#btn{
+    height: 20px;
+    padding: 4px;
+}
+.container::before{
+    height: 690px;
+}
+.box img{
+    width: 70px;
+    height: 90px;
+}
+#services{
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-left: 80px; */
+    
+}
+/* #home{
+    align-items: center;
+} */
+/* #home p{
+    text-align: center;
+} */
+.browse {
+    height: 28px;
+    padding: 7px;
+    margin: 3px;
+}

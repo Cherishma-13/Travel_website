@@ -1,0 +1,143 @@
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 12px 12px;
+    margin: 7px;
+    font-size: 27px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    ;
+}
+
+.navbar li a:hover {
+    background-color: orange;
+    border-radius: 27px;
+    color: black;
+    text-decoration: underline;
+}
+.image img{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: -10px;
+    top: 400px;
+    animation: animate 25s ease-in-out infinite;
+    z-index: -1;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(0);
+    }
+    /* 50%{
+        transform: translate3d(-500px,-50px,-500px) scale(0.8);
+    
+    } */
+    50%{
+        transform: translate3d(-1450px,0,-500px) scale(0.5);
+    }
+    100%{
+        transform: translate(1500px,0,-500px) scale(1);
+    }
+}
+
+.container::before {
+    content: "";
+    background: url('https://i.insider.com/5bfec49248eb12058423acf7?width=700');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 570px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    line-height: 2rem;
+    color: white;
+}
+
+#home h1 {
+    font-size: 60px;
+}
+
+#home h2 {
+    font-size: 45px;
+}
+
+#home h3 {
+    font-size: 30px;
+}
+
+input[type=search] {
+    width: 455px;
+    height: 40px;
+    border: none;
+}
+
+#btn {
+    height: 38px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.browse {
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* services section */
+#services {
+    display: flex;
+    margin-left: 100px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 12px;
+    margin: 10px;
+    width: 270px;
+    height: 215px;
+    /* border: 2px solid black; */
+    line-height: 1rem;
+    background-color: white;
+}
+
+
+.box img {
+    width: 100px;
+    height: 150px;
+}
+.box img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.box p {
+    text-align: center;
+}
+
+.box h3 {
+    text-align: center;
+}
